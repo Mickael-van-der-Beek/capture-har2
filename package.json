@@ -1,0 +1,46 @@
+{
+  "name": "capture-har2",
+  "version": "0.9.1",
+  "description": "",
+  "main": "lib",
+  "scripts": {
+    "test": " npm run lint && nyc npm run mocha",
+    "lint": "semistandard | snazzy",
+    "mocha": "mocha ./test",
+    "version": "echo $npm_package_version",
+    "watch:mocha": "mocha -w ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Woorank/capture-har"
+  },
+  "keywords": [
+    "capture",
+    "har",
+    "request"
+  ],
+  "author": "WooRank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Woorank/capture-har/issues"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "homepage": "https://github.com/Woorank/capture-har",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "har-validator": "^2.1.3",
+    "lolex": "^1.5.1",
+    "mocha": "^3.0.2",
+    "nyc": "^7.1.0",
+    "semistandard": "^8.0.0",
+    "snazzy": "^4.0.1"
+  },
+  "dependencies": {
+    "content-type": "^1.0.2",
+    "request": "^2.74.0",
+    "request-promise": "^4.1.1",
+    "tough-cookie": "^2.3.1"
+  }
+}
